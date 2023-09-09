@@ -1,10 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Template</title>
+    <meta charset="UTF-8">
+    <title>Folder Selection and Search</title>
 </head>
 <body>
-    <input type="file" id="ctrl" webkitdirectory directory multiple/>
-    <h1>Hello World!</h1>
+    <div id="folder-selector">
+        <button id="select-folder-button">Select Folder</button>
+        <input type="file" id="file-input" webkitdirectory directory multiple style="display: none;">
+        <ul id="file-list"></ul>
+    </div>
+    <div id="search">
+        <input type="text" id="search-input" placeholder="Search files">
+        <button id="search-button">Search</button>
+        <ul id="search-results"></ul>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
